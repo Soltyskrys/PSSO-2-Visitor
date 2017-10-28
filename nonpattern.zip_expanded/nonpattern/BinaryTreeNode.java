@@ -15,7 +15,11 @@ public class BinaryTreeNode extends TreeNode  {
 
 
   public void inFixPrint()  {
-  //print the bracketed infix version of the expression
+	  System.out.print("(");
+	  left.inFixPrint();
+	  System.out.print(label);
+	  right.inFixPrint();
+	  System.out.print(")");
   }
 
   private TreeNode left, right;

@@ -7,7 +7,7 @@ public class SimpleTreeNode extends TreeNode  {
   }
 
   public void inFixPrint()  {
-
+	  System.out.print(label);
   }
   
 }
