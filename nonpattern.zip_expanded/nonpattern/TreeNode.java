@@ -7,6 +7,9 @@ public abstract class TreeNode  {
   }
 
   public abstract void inFixPrint();
+  public abstract void postFixPrint();
+  public abstract void preFixPrint();
+  public abstract double evaluate();
 
   protected String label;
 }

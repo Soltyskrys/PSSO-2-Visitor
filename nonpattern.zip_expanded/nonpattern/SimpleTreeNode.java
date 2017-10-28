@@ -9,5 +9,20 @@ public class SimpleTreeNode extends TreeNode  {
   public void inFixPrint()  {
 	  System.out.print(label);
   }
-  
+
+@Override
+public void postFixPrint() {
+	System.out.print(label);	
+}
+
+@Override
+public void preFixPrint() {
+	System.out.print(label);	
+}
+
+@Override
+public double evaluate() {
+	return Double.parseDouble(label);
+}
+
 }

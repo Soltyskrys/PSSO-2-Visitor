@@ -56,6 +56,8 @@ public class Parser {
       return 2;
     else if (op.equals("/"))
       return 2;
+    else if (op.equals("%"))
+        return 2;
     else if (op.equals("+"))
       return 1;
     else if (op.equals("-"))
@@ -82,7 +84,7 @@ public class Parser {
   }
 
   private StringTokenizer lexAnalyser;
-  private String[] operators = new String[]{"+", "-", "*", "/"};
+  private String[] operators = new String[]{"+", "-", "*", "/","%"};
   private Stack<TreeNode> treeStack;
   private Stack<String> operatorStack;    
 }
